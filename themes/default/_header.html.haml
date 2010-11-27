@@ -3,12 +3,12 @@
     = link_to(h(@config.company_name), '/', :title => h(@config.company_name))
   %ul.nav
     %li
-      = link_to('Galleries', galleries_path, :title => 'Photo Galleries', :class => "#{'active' if controller.controller_name == 'galleries'}".html_safe)
+      = link_to(t(:galleries), galleries_path, :title => t(:galleries_tooltip), :class => "#{'active' if controller.controller_name == 'galleries'}".html_safe)
     - for page in @pages
       %li
         = link_to((page.title), page_path(page), :title => (page.title), :class => "#{'active' if @page and @page.id == page.id}".html_safe)
     - unless @config.blog_url.blank?
       %li
-        = link_to('Blog', @config.blog_url, :title => 'Photography Blog')
+        = link_to(t(:blog), @config.blog_url, :title => t(:blog_title))
     %li.last
-      = link_to('Client Login &raquo;'.html_safe, client_login_path, :title => 'Client Login')
+      = link_to(t(:client_login).html_safe + " &raquo;".html_safe, client_login_path, :title => t(:client_login))

@@ -74,7 +74,7 @@
   
   
 -content_for :subnav do
-  %li{ :class => 'last', :style => 'padding-left: 0' } Select a Gallery:
+  %li{ :class => 'last', :style => 'padding-left: 0' } #{t(:select_a_gallery)}
   - @galleries.each_with_index do |gallery, i|
     %li{ :class => "#{'last' if (i + 1) == @galleries.size}"}
       = link_to((gallery.title), gallery_path(gallery), :title => (gallery.title), :class => "#{'active' if @gallery.id == gallery.id}")
@@ -83,15 +83,15 @@
   #main
     .gallery_container
     %p.gallery_nav
-      %a{ :href => '#', :onclick => "$.galleria.prev(); resetSlideshow(); return false;", :title => 'Previous Photo' } &laquo; prev
+      %a{ :href => '#', :onclick => "$.galleria.prev(); resetSlideshow(); return false;", :title => 'Previous Photo' } &laquo; #{t(:prev)}
       |
-      %a{ :href => '#', :onclick => "$.galleria.next(); resetSlideshow(); return false;", :title => 'Next Photo' } next &raquo;
+      %a{ :href => '#', :onclick => "$.galleria.next(); resetSlideshow(); return false;", :title => 'Next Photo' } #{t(:next)} &raquo;
     %p= h(@gallery.description)
   #sidebar
     %h2
-      = "#{h(@gallery.title)} Photos"
+      = "#{h(@gallery.title)}"
     %p
-      Jump to a photo:
+      = t(:jump_to_photo)
     %ul.gallery_thumbs
       - @gallery.gallery_photos.each_with_index do |photo, i|
         %li{ :class => "#{'active' if i == 0}" }

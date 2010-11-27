@@ -3,3 +3,13 @@
 
 en:
   hello: "Hello world"
+  galleries: 'Galleries'
+  galleries_tooltip: 'Photo Galleries'
+  jump_to_photo: 'Jump to a photo:'
+  client_login: 'Client Login'
+  all_rights_reserved: 'All Rights Reserved'
+  select_a_gallery: 'Select a Gallery:'
+  next: 'next'
+  prev: 'prev'
+  blog: 'Blog'
+  blog_title: 'Photography Blog'
