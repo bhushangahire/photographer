@@ -19,7 +19,7 @@ class Photo < ActiveRecord::Base
   
   validates_attachment_presence :image
   validates_attachment_size :image, :less_than => 5000000
-  #validates_attachment_content_type :image, :content_type => ['image/jpeg']
+  validates_attachment_content_type :image, :content_type => ['image/jpeg']
   
   def before_save
     # if no title has been set, use the image's file name but spruce it up a little

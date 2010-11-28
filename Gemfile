@@ -3,7 +3,7 @@
 source 'http://rubygems.org'
 #source 'http://gemcutter.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.3'
 gem 'mysql'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
@@ -19,9 +19,10 @@ gem 'exifr'
 gem 'less'
 gem 'friendly_id'
 gem 'memcache-client'
+gem 'russian'
 
 # old plugins
-gem 'paperclip'
+gem 'paperclip', ">= 2.3.6" 
 gem 'dynamic_form'
 gem 'more'
 
