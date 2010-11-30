@@ -84,6 +84,9 @@ Lauranovara::Application.routes.draw do
             put :update_position
           end
         end
+        member do
+          put :update_position
+        end  
       end
 
       resources :pages do
