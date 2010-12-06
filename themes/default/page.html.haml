@@ -2,7 +2,7 @@
   %h1= (@page.intro.blank? ? (@page.title) : (@page.intro))
 #content
   #main
-    = image_tag(@page.image.url, :alt => (@page.title)) if @page.image?
     = @page.body.markdown.html_safe
   #sidebar
-    = render :partial => '/sidebar'
+    = image_tag(@page.image.url, :alt => (@page.title)) if @page.image?
+    -# = render :partial => '/sidebar'
