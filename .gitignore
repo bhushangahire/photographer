@@ -8,6 +8,7 @@ db/schema.rb
 db/README.mysqldump
 db/lauranovara-db*
 public/attachments/**/*
+public/google*
 config/database.yml
 config/deploy.rb
 config/deploy.jaime
