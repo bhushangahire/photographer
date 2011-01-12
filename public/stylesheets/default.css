@@ -446,9 +446,9 @@ a:hover { color: #ff9000; }
   -moz-opacity: 0.7;
   opacity: 0.7;
   width: 920px;
-  height: 60px;
-  margin: -80px 0 0px 0px;
-  padding: 10px 20px;
+  height: 70px;
+  margin: -105px 0 0 0px;
+  padding: 10px 20px 20px 20px;
 }
 .slide_description h2 {
   color: #ffffff;
