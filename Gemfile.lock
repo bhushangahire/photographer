@@ -68,7 +68,7 @@ GEM
     more (0.1.1)
       less
     mutter (0.5.3)
-    mysql (2.8.1)
+    mysql2 (0.2.7)
     paperclip (2.3.6)
       activerecord
       activesupport
@@ -135,9 +135,10 @@ DEPENDENCIES
   mime-types
   mocha
   more
-  mysql
+  mysql2 (= 0.2.7)
   paperclip (>= 2.3.6)
   rails (= 3.0.3)
+  rake (= 0.8.7)
   rdiscount
   rspec-rails (>= 2.0.0.beta.22)
   russian

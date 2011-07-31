@@ -4,7 +4,8 @@ source 'http://rubygems.org'
 #source 'http://gemcutter.org'
 
 gem 'rails', '3.0.3'
-gem 'mysql'
+gem 'mysql2', "0.2.7"
+gem 'rake', "0.8.7"
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'thin'
